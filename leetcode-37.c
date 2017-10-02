@@ -34,7 +34,7 @@ bool isValidSudoku(char** board, int boardRowSize, int boardColSize) {
     }
     return true;
 }
-
+//设置成bool型，不然会遍历所有可能，（包括正确答案）
 bool getAnwser(char** board,int i,int j){  
     if(i==8 && j==9){
         return true;
@@ -54,6 +54,7 @@ bool getAnwser(char** board,int i,int j){
             board[i][j]=k+'0';
             if(isValidSudoku(board,9,9)){
                 printf("%d %d %c \n",i,j,board[i][j]);
+            
                 if(getAnwser(board,i,++j)){
                     return true;   
                 }
