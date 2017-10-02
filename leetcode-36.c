@@ -1,3 +1,4 @@
+//这一题就是横竖加9宫格，不是最简单的方法
 bool isValidSudoku(char** board, int boardRowSize, int boardColSize) {
     
     if(board==NULL){
