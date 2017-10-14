@@ -1,6 +1,6 @@
 //使用递归阶梯，结果发现超时了
 int climbStairs(int n) {
-    if(n==0){
+    if(n<=0){
         return 0;
     }
     
